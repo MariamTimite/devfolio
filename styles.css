@@ -1,0 +1,166 @@
+body {
+    font-family: 'roboto';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    padding: 20 px;
+}
+h1, h2 {
+    margin: 0;
+}
+
+h1.title {
+    font-size: 2rem;
+    background: linear-gradient(to right, #1e3a8a, #c53030);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #c53030;
+}
+
+.home {
+    background: url('./images/coding-1.jpg') no-repeat center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about {
+    padding: 4rem 1.5rem;
+    background-color: #f3f4f6;
+}
+
+.about-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-video {
+    margin-top: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.work {
+    padding: 4rem 1.5rem;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.work-item {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume {
+    padding: 4rem 1.5rem;
+    background-color: #f3f4f6;
+}
+
+.resume-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.resume-table th, .resume-table td {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+.contact {
+    padding: 4rem 1.5rem;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f3f4f6;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    border-radius: 0.375rem;
+    transition: 0.2s;
+}
+  
+button:hover {
+    background-color: #b91c1c;
+  }
+  
+
+.footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

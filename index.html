@@ -3,74 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>DEVTIM-FOLIO</title>
 </head>
 <body>
     <!-- Header -->
-    <header id="" class="bg-white shadow-md p-2">
-        <nav class="flex justify-between items-center px-6 py-4">
-            <h1 class="bg-gradient-to-r from-blue-900 to-red-700 text-transparent bg-clip-text font-bold">DEVFOLIO<span>.</span></h1>
-            <ul class="flex items-center gap-6 text-black">
-                <li><a href="#home" class="hover:text-red-700">Home</a></li>
-                <li><a href="#about" class="hover:text-red-700">About</a></li>
-                <li><a href="#work" class="hover:text-red-700">Work</a></li>
-                <li><a href="#resume" class="hover:text-red-700">Resume</a></li>
-                <li><a href="#contact" class="hover:text-red-700">Contact</a></li>
+    <div class="flex flex-col h-screen">
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="title">DEVFOLIO<span>.</span></h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#work" class="nav-item">Work</a></li>
+                <li><a href="#resume" class="nav-item">Resume</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Header -->
-     
+<main class="py-5 bg-gray-700 text-white text-center" >
     <!-- Home Section -->
-    <section id="home" class="bg-[url('./images/coding-1.jpg')] bg-no-repeat bg-cover bg-center h-[500px] flex items-center justify-center">
-        <div class="bg-white/70 text-black rounded-lg h-[200px] w-[300px] flex flex-col items-center justify-center p-4 text-center">
+    <section id="home" class="home">
+        <div class="home-content">
             <p>BIENVENUE SUR</p>
-            <h1 class="bg-gradient-to-r from-blue-900 to-red-700 text-transparent bg-clip-text font-bold text-2xl">DEVFOLIO<span>.</span></h1>
+            <h1 class="title">DEVFOLIO<span>.</span></h1>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 px-6 bg-gray-100">
-        <h2 class="text-center text-2xl font-bold mb-8">About</h2>
-        <div class="max-w-4xl mx-auto text-center">
-            <p class="mb-4">Bonjour! Je suis une développeuse Web passionnée par la création de sites Web propres, conviviaux et fonctionnels.</p>
-            <iframe controls class="mx-auto w-3/4 rounded-lg" width="560" height="315" src="https://www.youtube.com/embed/gTHowvrzwlI?si=XUYWcF5plSvQShai" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="about" class="about">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+            <p>Bonjour! Je suis une développeuse Web passionnée par la création de sites Web propres, conviviaux et fonctionnels.</p>
+            <iframe controls class="about-video" width="560" height="315" src="https://www.youtube.com/embed/gTHowvrzwlI?si=XUYWcF5plSvQShai" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
     <!-- Work Section -->
-    <section id="work" class="py-16 px-6">
-        <h2 class="text-center text-2xl font-bold mb-8">Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div class="bg-[url('./images/easybank1.png')] bg-no-repeat bg-cover bg-center h-[400px] w-auto shadow-lg"></div>
-            <div class="bg-[url('./images/easybank2.png')] bg-no-repeat bg-cover bg-center h-[400px] w-auto shadow-lg"></div>
-            <div class="bg-[url('./images/easybank3.png')] bg-no-repeat bg-cover bg-center h-[400px] w-auto shadow-lg"></div>
+    <section id="work" class="work">
+        <h2 class="section-title">Work</h2>
+        <div class="work-gallery">
+            <div class="work-item" style="background-image: url('./images/easybank1.png');"></div>
+            <div class="work-item" style="background-image: url('./images/easybank2.png');"></div>
+            <div class="work-item" style="background-image: url('./images/easybank3.png');"></div>
         </div>
     </section>
 
     <!-- Resume Section -->
-    <section id="resume" class="py-16 px-6 bg-gray-100">
-        <h2 class="text-center text-2xl font-bold mb-8">Resume</h2>
-        <div class="max-w-4xl mx-auto">
-            <table class="w-full border-collapse border border-gray-300 text-left">
+    <section id="resume" class="resume">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-content">
+            <table class="resume-table">
                 <thead>
                     <tr>
-                        <th class="border border-gray-300 px-4 py-2">Année</th>
-                        <th class="border border-gray-300 px-4 py-2">Poste</th>
-                        <th class="border border-gray-300 px-4 py-2">Entreprise</th>
+                        <th>Année</th>
+                        <th>Poste</th>
+                        <th>Entreprise</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="border border-gray-300 px-4 py-2">2022</td>
-                        <td class="border border-gray-300 px-4 py-2">Frontend Developer</td>
-                        <td class="border border-gray-300 px-4 py-2">Southern IT Consulting</td>
+                        <td>2022</td>
+                        <td>Frontend Developer</td>
+                        <td>Southern IT Consulting</td>
                     </tr>
                     <tr>
-                        <td class="border border-gray-300 px-4 py-2">2023</td>
-                        <td class="border border-gray-300 px-4 py-2">UI Designer</td>
-                        <td class="border border-gray-300 px-4 py-2">Southern IT Consulting</td>
+                        <td>2023</td>
+                        <td>UI Designer</td>
+                        <td>Southern IT Consulting</td>
                     </tr>
                 </tbody>
             </table>
@@ -78,30 +81,31 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-6">
-        <h2 class="text-center text-2xl font-bold mb-8">Contact</h2>
-        <div class="max-w-md mx-auto">
-            <form action="#" method="POST" class="bg-gray-100 p-6 rounded shadow-lg">
-                <div class="mb-4">
-                    <label for="name" class="block mb-2">Nom:</label>
-                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-                <div class="mb-4">
-                    <label for="email" class="block mb-2">Email:</label>
-                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div class="mb-4">
-                    <label for="message" class="block mb-2">Message:</label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded" required></textarea>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="w-full bg-blue-900 text-white py-2 rounded hover:bg-red-700">Envoyer</button>
+                <button type="submit" class="submit-btn">Envoyer</button>
             </form>
         </div>
     </section>
-
+</main>
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-4 text-center">
+    <footer class="footer">
         <p>&copy; 2024 DEVFOLIO. Tous droits réservés.</p>
     </footer>
+</div>
 </body>
 </html>
